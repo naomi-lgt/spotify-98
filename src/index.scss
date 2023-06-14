@@ -1,5 +1,17 @@
 @import 'reset.css';
 
+@font-face {
+  font-family: "MSSansSerif";   /*Can be any text*/
+  src: local("MSSansSerif"),
+    url("./fonts/MSSansSerif.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MSSansSerifBold";   /*Can be any text*/
+  src: local("MSSansSerifBold"),
+    url("./fonts/MSSansSerifBold.ttf") format("truetype");
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

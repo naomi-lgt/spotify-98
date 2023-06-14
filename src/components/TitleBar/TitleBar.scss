@@ -15,6 +15,9 @@
         align-items: center;
         justify-content: center;
         display: flex;
+        font-family: 'MSSansSerif', sans-serif;
+        text-shadow: 0.5px 0px white, 1.5px 0px white; color: transparent; letter-spacing: 1px;
+        font-size: 12px;
 
         img {
             width: 12px;
@@ -24,19 +27,27 @@
 
     &-left {
         margin-left: 2px;
+
+        img {
+            margin-right: 3px;
+        }
+    }
+
+    &-right {
+        margin-right: 2px;
     }
 
     &-button {
-        width: 16px;
-        height: 14px;
+        width: 15px;
+        height: 13px;
         background-color: #C0C0C0;
-        border-top: 2px solid #FFF;
-        border-left: 2px solid #FFF;
-        border-right: 2px solid #000;
-        border-bottom: 2px solid #000;
+        border-top: 1.5px solid #FFF;
+        border-left: 1.5px solid #FFF;
+        border-right: 1.5px solid #000;
+        border-bottom: 1.5px solid #000;
         box-shadow:
-        inset 2px 2px #DFDFDF,
-        inset -2px -2px #808080;
+        inset 1.5px 1.5px #DFDFDF,
+        inset -1.5px -1.5px #808080;
 
         &.close, &.maximize, &.minimize {
             display: flex;
