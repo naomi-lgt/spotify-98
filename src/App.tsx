@@ -10,7 +10,6 @@ function App() {
       <div className="app-container">
         <div className="spotify-container">
           <div className="spotify-title-bar">
-            {/* <img className="s" src={speaker} alt="Speaker logo" /> */}
             <TitleBar icon={speaker} name="Spotify"></TitleBar>
           </div>
         </div>
