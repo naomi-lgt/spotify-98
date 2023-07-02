@@ -1,12 +1,16 @@
+$titleBarSize: 1.5rem;
+$borderSize: $titleBarSize * 0.07;
+$negativeBorderSize: (-$titleBarSize * 0.07);
+
 .title-bar {
     &-container {
         background: linear-gradient(90deg, #000080 0%, #1084D0 100%);
-        height: 20px;
+        height: $titleBarSize;
         display: flex;
         flex-direction: row;
-        margin: 2px;
+        margin: $titleBarSize * 0.1;
         margin-bottom: 0;
-        border: 2px solid #C0C0C0;
+        border: $titleBarSize * 0.1 solid #C0C0C0;
         justify-content: space-between;
     }
 
@@ -17,37 +21,37 @@
         display: flex;
         font-family: 'MSSansSerif', sans-serif;
         text-shadow: 0.5px 0px white, 1.5px 0px white; color: transparent; letter-spacing: 1px;
-        font-size: 12px;
+        font-size: $titleBarSize * 0.6;
 
         img {
-            width: 12px;
-            height: 12px;
+            width: $titleBarSize * 0.6;
+            height: $titleBarSize * 0.6;
         }
     }
 
     &-left {
-        margin-left: 2px;
+        margin-left: $titleBarSize * 0.1;
 
         img {
-            margin-right: 3px;
+            margin-right: $titleBarSize * 0.15;
         }
     }
 
     &-right {
-        margin-right: 2px;
+        margin-right: $titleBarSize * 0.1;
     }
 
     &-button {
-        width: 15px;
-        height: 13px;
+        width: $titleBarSize * 0.75;
+        height: $titleBarSize * 0.65;
         background-color: #C0C0C0;
-        border-top: 1.5px solid #FFF;
-        border-left: 1.5px solid #FFF;
-        border-right: 1.5px solid #000;
-        border-bottom: 1.5px solid #000;
+        border-top: $borderSize solid #FFF;
+        border-left: $borderSize solid #FFF;
+        border-right: $borderSize solid #000;
+        border-bottom: $borderSize solid #000;
         box-shadow:
-        inset 1.5px 1.5px #DFDFDF,
-        inset -1.5px -1.5px #808080;
+        inset $borderSize $borderSize #DFDFDF,
+        inset $negativeBorderSize $negativeBorderSize #808080;
 
         &.close, &.maximize, &.minimize {
             display: flex;
@@ -56,15 +60,15 @@
         }
 
         &.close img {
-            width: 8px;
-            height: 7px;
+            width: $titleBarSize * 0.4;
+            height: $titleBarSize * 0.35;
         }
 
         &.maximize {
-            margin-right: 2px;
+            margin-right: $titleBarSize * 0.1;
             img {
-                width: 9px;
-                height: 9px;
+                width: $titleBarSize * 0.45;
+                height: $titleBarSize * 0.45;
             }
         }
         
@@ -73,10 +77,10 @@
             position: relative;
             img {
                 position: absolute;
-                bottom: 3px;
-                left: 4px;
-                width: 6px;
-                height: 2px;
+                bottom: $titleBarSize * 0.15;
+                left: $titleBarSize * 0.2;
+                width: $titleBarSize * 0.3;
+                height: $titleBarSize * 0.1;
             }
         }
         
