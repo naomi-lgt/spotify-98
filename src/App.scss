@@ -15,7 +15,6 @@ $negativeBorderSize: -2px;
 
   .spotify-container {
     width: 58rem;
-    height: 42rem;
     background-color: #C0C0C0;
     border-top: $borderSize solid #FFF;
     border-left: $borderSize solid #FFF;
@@ -24,10 +23,31 @@ $negativeBorderSize: -2px;
     box-shadow:
       inset $borderSize $borderSize #DFDFDF,
       inset $negativeBorderSize $negativeBorderSize #808080;
+
+      .spotify-main-container {
+        width: auto;
+        height: 41rem;
+        background-color: #C0C0C0;
+        margin: $borderSize;
+        margin-top: $borderSize * 4;
+        border: $borderSize solid #C0C0C0;
+
+        .spotify-left-side {
+          width: 20%;
+          margin: 0 4px;
+        }
+      }
   }
 }
 
 hr {
+  border: none;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #808080;
+  margin: auto 1px;
+}
+
+hr.title-bar-divider {
   border: none;
   border-top: $borderSize solid #808080;
   border-bottom: $borderSize solid #000;

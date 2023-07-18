@@ -20,7 +20,9 @@ $negativeBorderSize: -2px;
         justify-content: center;
         display: flex;
         font-family: 'MSSansSerif', sans-serif;
-        text-shadow: 0.5px 0px white, 1.5px 0px white; color: transparent; letter-spacing: 1px;
+        text-shadow: 0.5px 0px white, 1.5px 0px white; 
+        color: transparent; 
+        letter-spacing: 1px;
         font-size: $titleBarSize * 0.6;
 
         img {

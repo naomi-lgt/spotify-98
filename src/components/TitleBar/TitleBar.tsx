@@ -25,7 +25,7 @@ function TitleBar({icon, name}: TitleBarInterface) {
                     </div>
                 </div>
             </div>
-            <hr />
+            <hr className="title-bar-divider" />
         </>
     )
 }
