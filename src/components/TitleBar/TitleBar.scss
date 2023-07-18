@@ -1,6 +1,6 @@
 $titleBarSize: 1.5rem;
-$borderSize: $titleBarSize * 0.07;
-$negativeBorderSize: (-$titleBarSize * 0.07);
+$borderSize: 2px;
+$negativeBorderSize: -2px;
 
 .title-bar {
     &-container {

@@ -2,6 +2,9 @@
   // font-size: 25px;
 }
 
+$borderSize: 2px;
+$negativeBorderSize: -2px;
+
 .app-container {
   background-color: #008080;
   width: 100%;
@@ -11,22 +14,22 @@
   align-items: center;
 
   .spotify-container {
-    width: 55rem;
-    height: 625px;
+    width: 58rem;
+    height: 42rem;
     background-color: #C0C0C0;
-    border-top: 1.5px solid #FFF;
-    border-left: 1.5px solid #FFF;
-    border-right: 1.5px solid #000;
-    border-bottom: 1.5px solid #000;
+    border-top: $borderSize solid #FFF;
+    border-left: $borderSize solid #FFF;
+    border-right: $borderSize solid #000;
+    border-bottom: $borderSize solid #000;
     box-shadow:
-      inset 1.5px 1.5px #DFDFDF,
-      inset -1.5px -1.5px #808080;
+      inset $borderSize $borderSize #DFDFDF,
+      inset $negativeBorderSize $negativeBorderSize #808080;
   }
 }
 
 hr {
   border: none;
-  border-top: 1.5px solid #808080;
-  border-bottom: 1.5px solid #000;
-  margin: auto 1.5px;
+  border-top: $borderSize solid #808080;
+  border-bottom: $borderSize solid #000;
+  margin: auto $borderSize;
 }
