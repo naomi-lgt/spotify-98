@@ -31,6 +31,7 @@ $negativeBorderSize: -2px;
         margin: $borderSize;
         margin-top: $borderSize * 4;
         border: $borderSize solid #C0C0C0;
+        display: flex;
 
         .spotify-left-side {
           width: 20%;
@@ -43,12 +44,16 @@ $negativeBorderSize: -2px;
               & > * {
                 margin-bottom: 3px;
               }
+
+              & a.active {
+                
+              }
             }
 
             .user-navigation {
               margin: 6px 0;
 
-              & > * {
+              & > .navigation-button {
                 margin-bottom: 6px;
               }
             }
@@ -56,6 +61,10 @@ $negativeBorderSize: -2px;
         }
       }
   }
+}
+
+a {
+  text-decoration: none;
 }
 
 hr {

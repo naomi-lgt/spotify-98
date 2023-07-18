@@ -1,12 +1,17 @@
-import { NavigationButtonInterface } from "../../models/NavigationButtonInterface";
+import { NavLink } from "react-router-dom";
+import { RoutingButtonInterface } from "../../models/RoutingButtonInterface";
 import './NavigationButton.scss';
 
-function NavigationButton({icon, name}: NavigationButtonInterface) {
+function NavigationButton({icon, name, path}: RoutingButtonInterface) {
     return (
-        <div className="navigation-button">
-            <img src={icon} alt="" />
-            <span>{name}</span>
-        </div>
+        <NavLink to={path}>
+            {({ isActive }) => (
+                <div className={isActive ? 'navigation-button active' : 'navigation-button'}>
+                    <img src={icon} alt="" />
+                    <span>{name}</span>
+                </div>
+            )}
+        </NavLink>
     )
 }
 

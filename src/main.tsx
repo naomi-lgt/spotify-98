@@ -4,9 +4,12 @@ import App from './App.tsx'
 import './index.scss'
 import './fonts/MSSansSerif.ttf'
 import './fonts/MSSansSerifBold.ttf'
+import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
 )

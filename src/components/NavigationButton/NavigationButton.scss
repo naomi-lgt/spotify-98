@@ -2,7 +2,7 @@ $borderSize: 2px;
 $negativeBorderSize: -2px;
 
 .navigation-button {
-    height: 28px;
+    height: 32px;
     font-family: 'MSSansSerif', sans-serif;
     color: #222;
     font-size: 0.75rem;
@@ -16,6 +16,7 @@ $negativeBorderSize: -2px;
         inset $negativeBorderSize $negativeBorderSize #808080;
     display: flex;
     align-items: center;
+    margin-bottom: 3px;
 
     img {
         height: 1rem;
@@ -25,5 +26,15 @@ $negativeBorderSize: -2px;
 
     span {
         margin-left: 6px;
+    }
+
+    &.active {
+        border-top: $borderSize solid #000;
+        border-left: $borderSize solid #000;
+        border-right: $borderSize solid #FFF;
+        border-bottom: $borderSize solid #FFF;
+        box-shadow:
+            inset $borderSize $borderSize #808080,
+            inset $negativeBorderSize $negativeBorderSize #DFDFDF;
     }
 }
