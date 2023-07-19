@@ -14,13 +14,13 @@ function TitleBar({icon, name}: TitleBarInterface) {
                     <span>{name}</span>
                 </div>
                 <div className="title-bar-right">
-                    <div className="title-bar-button minimize">
+                    <div className="title-bar-button border minimize">
                         <img src={minimize} alt="" />
                     </div>
-                    <div className="title-bar-button maximize">
+                    <div className="title-bar-button border maximize">
                         <img src={maximize} alt="" />
                     </div>
-                    <div className="title-bar-button close">
+                    <div className="title-bar-button border close">
                         <img src={close} alt="" />
                     </div>
                 </div>

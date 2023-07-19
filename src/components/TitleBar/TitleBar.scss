@@ -47,13 +47,6 @@ $negativeBorderSize: -2px;
         width: $titleBarSize * 0.75;
         height: $titleBarSize * 0.65;
         background-color: #C0C0C0;
-        border-top: $borderSize solid #FFF;
-        border-left: $borderSize solid #FFF;
-        border-right: $borderSize solid #000;
-        border-bottom: $borderSize solid #000;
-        box-shadow:
-        inset $borderSize $borderSize #DFDFDF,
-        inset $negativeBorderSize $negativeBorderSize #808080;
 
         &.close, &.maximize, &.minimize {
             display: flex;

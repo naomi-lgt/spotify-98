@@ -6,7 +6,7 @@ function NavigationButton({icon, name, path}: RoutingButtonInterface) {
     return (
         <NavLink to={path}>
             {({ isActive }) => (
-                <div className={isActive ? 'navigation-button active' : 'navigation-button'}>
+                <div className={isActive ? 'navigation-button active-border' : 'navigation-button border'}>
                     <img src={icon} alt="" />
                     <span>{name}</span>
                 </div>

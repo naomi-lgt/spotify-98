@@ -7,13 +7,6 @@ $negativeBorderSize: -2px;
     color: #222;
     font-size: 0.75rem;
     background-color: #C0C0C0;
-    border-top: $borderSize solid #FFF;
-    border-left: $borderSize solid #FFF;
-    border-right: $borderSize solid #000;
-    border-bottom: $borderSize solid #000;
-    box-shadow:
-        inset $borderSize $borderSize #DFDFDF,
-        inset $negativeBorderSize $negativeBorderSize #808080;
     display: flex;
     align-items: center;
     margin-bottom: 3px;
@@ -26,15 +19,5 @@ $negativeBorderSize: -2px;
 
     span {
         margin-left: 6px;
-    }
-
-    &.active {
-        border-top: $borderSize solid #000;
-        border-left: $borderSize solid #000;
-        border-right: $borderSize solid #FFF;
-        border-bottom: $borderSize solid #FFF;
-        box-shadow:
-            inset $borderSize $borderSize #808080,
-            inset $negativeBorderSize $negativeBorderSize #DFDFDF;
     }
 }
