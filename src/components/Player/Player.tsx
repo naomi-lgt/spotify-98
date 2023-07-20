@@ -1,5 +1,7 @@
 import './Player.scss';
 import songIcon from '../../assets/player/song.png'
+import cursor from '../../assets/player/cursor.png'
+import volume from '../../assets/player/volume.png'
 import {buttonDataArray} from '../../fixedData'
 import Button from '../Button/Button';
 
@@ -18,17 +20,23 @@ function Player() {
             <div className="player-main">
                 <div className="song-buttons">
                     {buttonDataArray.map((btn, key) => {
-                        return (
-                            <Button icon={btn.icon} alt={btn.alt} key={key}></Button>
-                        )
+                        return (<Button icon={btn.icon} alt={btn.alt} key={key}></Button>)
                     })}
-
                 </div>
                 <div className="song-length">
-
+                    <span className="length-start">0:00</span>
+                        <div className="length-player range-slider">
+                            <img src={cursor} alt="Player slider" />
+                        </div>
+                    <span className="length-end">3:00</span>
                 </div>
             </div>
-            <div className="player-volume"></div>
+            <div className="player-volume">
+                <img className="volume-icon" src={volume} alt="Change volume" />
+                <div className="volume-slider range-slider">
+                    <img src={cursor} alt="Volume slider" />
+                </div>
+            </div>
         </div>
     )
 }

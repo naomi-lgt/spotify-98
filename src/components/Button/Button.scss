@@ -6,7 +6,19 @@
     align-items: center;
     margin-right: 3px;
 
-    img {
+    .shuffle {
         height: 15px
+    }
+
+    .backward, .forward {
+        height: 12px
+    }
+
+    .play {
+        height: 10px
+    }
+
+    .loop {
+        height: 14px
     }
 }

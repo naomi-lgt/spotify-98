@@ -69,10 +69,6 @@ export const buttonDataArray: Array<ButtonInterface> = [
         alt: 'Forward'
     },
     {
-        icon: backward,
-        alt: 'Backward'
-    },
-    {
         icon: loop,
         alt: 'Loop'
     },
