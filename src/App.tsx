@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import speaker from './assets/speaker.png'
 import './App.scss'
 import TitleBar from './components/TitleBar/TitleBar'
@@ -17,6 +17,19 @@ import Player from './components/Player/Player'
 import {mainNavigationButtonsArray, userNavigationButtonsArray} from './fixedData'
 
 function App() {
+
+  const [token, setToken] = useState('');
+
+    useEffect(() => {
+        async function getToken() {
+            const response = await fetch('http://localhost:3333/auth/token');
+            const json = await response.json();
+            console.log(json)
+            setToken(json.access_token);
+        }
+
+        getToken();
+    }, []);
 
   return (
     <>
@@ -48,7 +61,7 @@ function App() {
               </div>
               <div className="spotify-right-side">
               <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<Home token={token} />} />
                 <Route path="/search" element={<Search />} />
                 <Route path="/search" element={<Search />} />
                 <Route path="/library" element={<Library />} />

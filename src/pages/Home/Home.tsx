@@ -1,9 +1,12 @@
+import Login from '../../components/Login/Login';
 import './Home.scss';
 
-function Home() {
+function Home({token}: any) {
+    console.log(token)
+
     return (
         <div className="home-container">
-            Home
+            {token === undefined ? <Login></Login> : 'logged'}
         </div>
     )
 }
