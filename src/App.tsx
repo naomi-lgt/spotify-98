@@ -72,7 +72,7 @@ function App() {
               </div>
             </div>
             <div className="spotify-player-block border">
-              <Player></Player>
+              {token ? <Player token={token}></Player> : 'pas de token'}
             </div>
           </div>
         </div>

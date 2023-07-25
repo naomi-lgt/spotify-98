@@ -3,6 +3,8 @@ import './Home.scss';
 
 function Home({token}: any) {
     console.log(token)
+    console.log('coucou');
+    
 
     return (
         <div className="home-container">
