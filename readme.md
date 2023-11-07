@@ -1,5 +1,5 @@
 # :musical_note: Welcome to the Spotify 98 repository! :floppy_disk:
-🚀 Version 0.1 ([English](https://github.com/naomi-lgt/Museek-2023/blob/master/README.md), [Français](https://github.com/naomi-lgt/Museek-2023/blob/master/README.fr.md))
+🚀 Version 0.1 ([English](https://github.com/naomi-lgt/spotify-98/blob/master/README.md), [Français](https://github.com/naomi-lgt/spotify-98/blob/master/README.fr.md))
 
 Spotify 98 is a web application that integrates the Spotify API, allowing users to connect to their Spotify accounts in order to stream music. It includes functionalities like a music player with various capabilities, such as Play/Pause, Skip, Loop/Shuffle Play, a progress bar, and a volume control bar. Additionally, Spotify 98 features a sidebar with navigation with options like Home page, Search, Library, Playlist creation, Liked tracks, Saved podcasts and Saved playlists. The main section displays content based on the selected navigation option.
 
