@@ -18,6 +18,9 @@ function Player({token} : any) {
     const [player, setPlayer] = useState<Spotify.Player | undefined>(undefined);
     const [is_paused, setPaused] = useState(false);
     const [is_active, setActive] = useState(false);
+    const [duration, setDuration] = useState(0);
+    const [position, setPosition] = useState(0);
+
     
     
     const [current_track, setTrack] = useState<Spotify.Track | undefined>(undefined);
@@ -58,15 +61,6 @@ function Player({token} : any) {
                 }
             })
 
-            // player.setVolume(0.2).then(() => {
-            //     console.log('Volume updated!');
-            // });
-
-            player.getVolume().then((volume) => {
-                let volume_percentage = volume * 100;
-                console.log(`The volume of the player is ${volume_percentage}%`);
-            });
-
             setPlayer(player);
 
             player.addListener('player_state_changed', ( (state: any) => {
@@ -74,9 +68,10 @@ function Player({token} : any) {
                 if (!state) {
                     return;
                 }
-            
+
                 setTrack(state.track_window.current_track);
                 setPaused(state.paused);
+                setDuration(state.duration)
             
             
                 player.getCurrentState().then( (state: any) => { 
@@ -84,11 +79,9 @@ function Player({token} : any) {
                 });
             
             }));
-    
+            
         };
     }, []);
-
-    // console.log(player)
     
     return (
         <div className="player-container">
@@ -117,9 +110,9 @@ function Player({token} : any) {
                     })}
                 </div>
                 <div className="song-length">
-                    <span className="length-start">0:00</span>
+                    <span className="length-start">{position / 1000}</span>
                         <input type="range" id="song-slider" name="song-slider" min="0" max="100" className="length-player range-slider"></input>
-                    <span className="length-end">3:00</span>
+                    <span className="length-end">{duration / 1000}</span>
                 </div>
             </div>
             <div className="player-volume">
