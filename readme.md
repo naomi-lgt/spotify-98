@@ -1,11 +1,11 @@
 # :musical_note: Welcome to the Spotify 98 repository! :floppy_disk:
 🚀 Version 0.1 ([English](https://github.com/naomi-lgt/spotify-98/blob/master/README.md), [Français](https://github.com/naomi-lgt/spotify-98/blob/master/README.fr.md))
 
-Spotify 98 is a web application that integrates the Spotify API, allowing users to connect to their Spotify accounts in order to stream music. It includes functionalities like a music player with various capabilities, such as Play/Pause, Skip, Loop/Shuffle Play, a progress bar, and a volume control bar. Additionally, Spotify 98 features a sidebar with navigation with options like Home page, Search, Library, Playlist creation, Liked tracks, Saved podcasts and Saved playlists. The main section displays content based on the selected navigation option.
-
 <div align="center">
   <img src="https://iili.io/J9rLex1.png" alt="spotify-98-cover" border="0" style="height: 400px">
 </div>
+
+Spotify 98 is a web application that integrates the Spotify API, allowing users to connect to their Spotify accounts in order to stream music. Its design is based on [Gustavo Luz's Figma project](https://www.figma.com/file/9tJEcEEvMDdj1v4cGGCg0i/W100-2-Design-System-(Community)?type=design&node-id=112-4513&mode=design&t=zjpFtWJYPZ1xB0MV-0) which imagines what Spotify would look like in Windows 98. It includes functionalities like a music player with various capabilities, such as Play/Pause, Skip, Loop/Shuffle Play, a progress bar, and a volume control bar. Additionally, Spotify 98 features a sidebar with navigation with options like Home page, Search, Library, Playlist creation, Liked tracks, Saved podcasts and Saved playlists. The main section displays content based on the selected navigation option.
 
 ### :warning: The project is still in early development, but you can check out my progress under the DEV branch :warning:
 
