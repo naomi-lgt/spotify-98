@@ -1,5 +1,5 @@
 # :musical_note: Bienvenue sur le dépot de Spotify 98 ! :floppy_disk:
-🚀 Version 0.1 ([English](https://github.com/naomi-lgt/spotify-98/blob/master/README.md), [Français](https://github.com/naomi-lgt/spotify-98/blob/master/README.fr.md))
+🚀 Version 0.1 ([English](https://github.com/naomi-lgt/spotify-98/blob/main/readme.md), [Français](https://github.com/naomi-lgt/spotify-98/blob/main/readme.fr.md))
 
 <div align="center">
   <img src="https://iili.io/J9rLex1.png" alt="spotify-98-cover" border="0" style="height: 400px">
